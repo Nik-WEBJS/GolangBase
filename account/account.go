@@ -42,7 +42,7 @@ func NewAccount(login, password, urlString string) (*Account, error) {
 	return newAcc, nil
 }
 
-func (acc *Account) OutputPass() {
+func (acc *Account) Output() {
 	color.Cyan(acc.Login)
 
 	fmt.Println(acc.Login, acc.Password, acc.Url)
